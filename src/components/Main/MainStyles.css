@@ -53,6 +53,7 @@
     font-weight: bolder !important;
     font-size: x-large;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
     transition: all 0.3s ease;
     /* border: solid yellow; */
 }
