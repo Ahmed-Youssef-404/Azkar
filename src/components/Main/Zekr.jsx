@@ -4,9 +4,9 @@ import data from '../../assets/data.json'
 
 export default function Zekr(props) {
 
-    const may = data.map((oneZekr) => {
-        const [count, setCount] = React.useState(oneZekr.count);
+    const finalZekr = data.map((oneZekr) => {
 
+        const [count, setCount] = React.useState(oneZekr.count);
 
         function handleCount() {
             setCount(prev => prev - 1);
@@ -16,6 +16,7 @@ export default function Zekr(props) {
 
         const isEvening = !props.isDay
 
+        // لو احنا في النهار تخطى آية "آمن الله ..."
         if (oneZekr.id === 0 && !isEvening) {
             return null;
         }
@@ -73,7 +74,7 @@ export default function Zekr(props) {
 
     return (
         <>
-            {may}
+            {finalZekr}
         </>
     )
 }

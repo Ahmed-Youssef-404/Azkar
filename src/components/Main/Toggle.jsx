@@ -4,11 +4,11 @@ import "./ToggleStyles.css"
 export default function Main(props) {
 
 
-    const [day, setIsChecked] = React.useState(true);
+    const [day, setIsDay] = React.useState(true);
 
     function handleToggle() {
         const newValue = !day;
-        setIsChecked(newValue);
+        setIsDay(newValue);
         props.isDay(newValue);
     }
     

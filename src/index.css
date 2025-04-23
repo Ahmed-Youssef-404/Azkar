@@ -77,42 +77,12 @@ body h1 {
     font-weight: 700 !important;
 }
 
-/* 
-body.light{
-    color: #fff;
-    background-color: #130027;
-}
-
-body.dark{
-    color: black;
-    background-color: #ebd7ff;
-} */
-
 #root {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     /* border: solid rgb(181, 0, 126); */
-}
-
-
-.app {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* border: solid red; */
-    width: 75%;
-    margin: 25px auto;
-}
-
-@media (max-width: 990px) {
-    .app {
-        margin: 0 !important;
-        width: 100% !important;
-        /* border: solid rgb(191, 255, 0) !important; */
-    }
 }
 
 
@@ -132,6 +102,20 @@ body.dark{
     border-radius: 10px;
     border: none;
 }
+
+
+
+/* 
+body.light{
+    color: #fff;
+    background-color: #130027;
+}
+
+body.dark{
+    color: black;
+    background-color: #ebd7ff;
+} */
+
 
 /* font-family: Noto Kufi Arabic !important;  لكلمة أذكار الصباح/المساء */
 

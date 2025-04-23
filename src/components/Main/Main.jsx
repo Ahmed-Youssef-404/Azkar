@@ -6,24 +6,21 @@ import './MainStyles.css'
 
 export default function Main() {
 
-    const [isDay, setIsEvening] = React.useState(true)
+    const [isDay, setIsDay] = React.useState(true)
 
     React.useEffect(() => {
         document.body.className = isDay ? "light-theme" : "dark-theme";
     }, [isDay]);
 
-
-    function isItDay(data) {
-        if (data) {
-            console.log("☀️ تم اختيار أذكار الصباح");
-            setIsEvening(true)
+    function isItDay(day) {
+        if (day) {
+            console.log("الصباح");
+            setIsDay(true)
         } else {
-            console.log("✅ تم اختيار أذكار المساء");
-            setIsEvening(false)
+            console.log("المساء");
+            setIsDay(false)
         }
     }
-
-
 
     return (
 
