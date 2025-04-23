@@ -15,6 +15,7 @@ span{
 
 .label {
     pointer-events: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .input {
