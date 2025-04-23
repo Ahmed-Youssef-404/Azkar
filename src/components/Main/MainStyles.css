@@ -42,7 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 50px;
+    gap: 20px;
     padding: 15px 20px;
     margin: 10px 0;
     border-radius: 20px;
@@ -56,6 +56,10 @@
     -webkit-tap-highlight-color: transparent;
     transition: all 0.3s ease;
     /* border: solid yellow; */
+}
+
+.zekr>p{
+    text-align: justify !important;
 }
 
 .done{
