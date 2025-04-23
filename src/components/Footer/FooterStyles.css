@@ -25,3 +25,10 @@
 .footer a:hover {
     text-decoration: underline !important;
 }
+
+@media (max-width: 500px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
