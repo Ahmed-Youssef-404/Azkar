@@ -1,0 +1,112 @@
+:root {
+    line-height: 1.5;
+    /* font-weight: 400; */
+    -webkit-tap-highlight-color: transparent; 
+}
+
+.light-theme {
+
+    --body-background-color: #6d5344;
+    
+    --container-background-color: #b1937c;
+
+    --zekr-background-color: #ded7c9;
+    --zekrDone-background-color: #75ff75af;
+
+    --bottom-color: #e69f6b8c;
+
+    --text-color: #000000;
+    --text-color-costom: #ffff;
+
+    --footer-background-color: #ded7c9;
+    --footer-text-color: #362d21;
+}
+
+.dark-theme {
+
+    --body-background-color: #17153B;
+
+    --container-background-color: #3a3075;
+
+    --zekr-background-color: #16114a;
+    --zekrDone-background-color: #0d4e17;
+
+    --bottom-color: #C8ACD6;
+
+    --text-color: #f7ffdc;
+    --text-color-costom: #d7e3ff;
+
+    --footer-background-color: #a39bd0;
+    --footer-text-color: #383a6b;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow: auto;
+    color: #fff;
+    background-color: var(--body-background-color);
+    transition: .5s;
+}
+
+body h1 {
+    color: var(--text-color-costom) !important;
+    /* font-size: 2.5rem; */
+    font-weight: 700 !important;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* border: solid rgb(181, 0, 126); */
+}
+
+
+/* للمتصفحات المبنية على WebKit زي Chrome و Safari */
+::-webkit-scrollbar {
+    width: 6px;
+    /* أو height لو scroll أفقي */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.1);
+    /* شبه شفاف */
+    border-radius: 10px;
+    border: none;
+}
+
+
+
+/* 
+body.light{
+    color: #fff;
+    background-color: #130027;
+}
+
+body.dark{
+    color: black;
+    background-color: #ebd7ff;
+} */
+
+
+/* font-family: Noto Kufi Arabic !important;  لكلمة أذكار الصباح/المساء */
+
+/* font-family: Almarai !important; للعنوان */
+
+/* font-family: Amiri !important; للقرآن */
